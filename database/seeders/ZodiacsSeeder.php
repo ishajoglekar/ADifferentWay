@@ -17,6 +17,7 @@ class ZodiacsSeeder extends Seeder
         DB::table('zodiacs')->insert([
             'name'=> 'Aries',
             'element_id'=> 2,
+            
             'birthnumber_id'=> 9
             
         ]);
