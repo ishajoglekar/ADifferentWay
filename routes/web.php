@@ -13,7 +13,7 @@ use App\Http\Controllers\ClientsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/clients/create');
+Route::get('/', 'App\Http\Controllers\ClientsController@create');
 Route::resource('clients', ClientsController::class);
 // Route::resource('doctor', 'User\DoctorsController');
 
