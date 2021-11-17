@@ -54,7 +54,7 @@ class Client extends Model
     }
     public function auspiciousmonths()
     {
-        return $this->belongsTo(AuspiciousMonths::class);
+        return $this->belongsTo(Auspiciousmonths::class);
     }
     public function profession()
     {
