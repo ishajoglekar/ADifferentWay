@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-md-3">
                         <p id="date" style="text-align:right"></p>
-                        <span> <img src="{{ asset('img/logo.png') }}" style="" alt=""></span>
+                        <span> <img src="{{ asset('img/logo.png') }}" alt=""></span>
                     </div>
                 </div>
 
