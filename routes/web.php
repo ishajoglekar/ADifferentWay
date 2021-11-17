@@ -14,6 +14,6 @@ use App\Http\Controllers\ClientsController;
 |
 */
 Route::get('/', 'App\Http\Controllers\ClientsController@create');
-Route::resource('clients', ClientsController::class);
+Route::resource('client', ClientsController::class);
 // Route::resource('doctor', 'User\DoctorsController');
 

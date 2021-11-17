@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-       <form action="{{route('clients.update',$client->id)}}" method="POST" class="form">
+       <form action="{{route('client.update',$client->id)}}" method="POST" class="form">
            @csrf
             <label for="" class="form-label">Name:</label>
             <input type="text" class="form-control m-2" value="{{$client->name}}" name="name">

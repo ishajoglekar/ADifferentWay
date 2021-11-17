@@ -14,7 +14,7 @@
     <div class="container">
         
         @foreach($clients as $client)
-        <a href="{{route('clients.edit',$client->id)}}">Edit</a>
+        <a href="{{route('client.edit',$client->id)}}">Edit</a>
         @endforeach
     </div>
 </body>

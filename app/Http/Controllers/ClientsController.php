@@ -22,7 +22,7 @@ class ClientsController extends Controller
     {
         $clients = Client::all();
         // dd($clients[0]->Luckycolors()->get());
-        return view('clients.index',compact(['clients']));
+        return view('client.index',compact(['clients']));
     }
 
     /**
@@ -32,7 +32,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        return view('clients.create');
+        return view('client.create');
     }
 
     /**
@@ -116,7 +116,7 @@ class ClientsController extends Controller
         // dd($client);
         $client->save();
         
-        return redirect()->route('clients.edit',compact([
+        return redirect()->route('client.edit',compact([
             'client'
         ]));
     }
@@ -146,8 +146,8 @@ class ClientsController extends Controller
         $destinyplanet = BirthNumbers::all()->where('id',$client->destinynumber)->first()->planet;
         // dd(Carbon::parse($client->dob)->format('m'));
         // dd($client->element->element);
-        // return view('clients.report');
-        return view('clients.report',compact([
+        // return view('client.report');
+        return view('client.report',compact([
             'client',
             'birthplanet',
             'destinyplanet'

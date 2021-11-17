@@ -80,7 +80,7 @@
         <div id="loader2"></div>
     </div>
     <div class="container">
-        <form action="{{route('clients.store')}}" method="POST" class="form-vertical">
+        <form action="{{route('client.store')}}" method="POST" class="form-vertical">
             @csrf
             <br><br><br><br><br>
             <input type="text" class="form-control" name="name">
