@@ -22,7 +22,9 @@ class ClientsController extends Controller
     {
         $clients = Client::all();
         // dd($clients[0]->Luckycolors()->get());
-        return view('client.index',compact(['clients']));
+        
+        return view('login');
+        // return view('client.index',compact(['clients']));
     }
 
     /**

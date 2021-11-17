@@ -58,32 +58,42 @@
 
         }
     </style>
+
+    
     <div id="loader">
         <div id="loader1" class="animate__animated animate__slideOutLeft "></div>
         <img src="{{ asset('img/logo.png') }}" id="logo" alt="" class="animate__animated animate__fadeOut">
         <h1 class="heading animate__animated animate__fadeOut">Welcome Anujja Vavhal!</h1>
         <div id="loader2" class="animate__animated animate__slideOutRight "></div>
     </div>
-    <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h1 class=""><strong>Anujja Vavhal</strong></h1>
-                        <br>
-                        <h3> A Different Way</h3>
-                        <h5>By Anujja</h5>
-                        <h5 style="font-style:italic; color:orange">Have faith and see the magic happen!</h5>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date" style="text-align:right"></p>
-                        <span> <img src="{{ asset('img/logo.png') }}" alt="" style="width:50%"></span>
-                    </div>
-                </div>
+    <div class="d-md-flex justify-content-md-end" style="z-index:-100">
+        <a href="" class="btn btn-danger " href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout</a>
 
-                <br>
-                <p style="text-align:center">ARCHITECT & INTERIOR DESIGNER | VASTU EXPERT | NUMEROLOGIST | REIKI & CRYSTAL HEALER | ANGEL CARD READER | SWITCHWORDS EXPERT</p>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="">
+            @csrf
+        </form>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1 class=""><strong>Anujja Vavhal</strong></h1>
+                    <br>
+                    <h3> A Different Way</h3>
+                    <h5>By Anujja</h5>
+                    <h5 style="font-style:italic; color:orange">Have faith and see the magic happen!</h5>
+                </div>
+                <div class="col-md-3">
+                    <p id="date" style="text-align:right"></p>
+                    <span> <img src="{{ asset('img/logo.png') }}" alt="" style="width:50%"></span>
+                </div>
             </div>
+
+            <br>
+            <p style="text-align:center">ARCHITECT & INTERIOR DESIGNER | VASTU EXPERT | NUMEROLOGIST | REIKI & CRYSTAL HEALER | ANGEL CARD READER | SWITCHWORDS EXPERT</p>
         </div>
+    </div>
     <div class="container">
         <br>
         <h1 class="text-center">Numerology Report by Anujja Vavhal</h1>
@@ -109,7 +119,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
 <script>
-    setTimeout(function(){
+    setTimeout(function() {
         $('#logo').hide();
     }, 2000);
     // document.getElementById('logo').style.display = 'none';

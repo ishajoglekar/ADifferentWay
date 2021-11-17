@@ -13,6 +13,14 @@
 
 <body>
     <div class="container">
+        <div class="d-md-flex justify-content-md-end" style="z-index:100">
+        <a href="" class="btn btn-danger " href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout</a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="">
+                @csrf
+            </form>
+            </div>
         <div class="card">
             <div class="card-header">
                 <div class="row">
@@ -295,7 +303,7 @@
                         </tr>
                         <tr>
                             <td>
-                                Kalbhairavashtak for family protection (after 8.00 pm)	
+                                Kalbhairavashtak for family protection (after 8.00 pm)
                             </td>
                             <td>
                                 <input type="checkbox">
@@ -313,29 +321,29 @@
                     </h4>
 
                     <p style="font-style:italic;color:#444">
-                    Always write your name given as per Numerology to bring it on a very auspicious & fortunate number (5). With this you will be able to continue and cover up all your unfinished work and you will thrive and become very successful with this name. The signature should slant upwards in around 45 degrees’ angle, underline the signature from beginning to end of the name as it serves as a platform. Don’t cut the name with a line</p>
+                        Always write your name given as per Numerology to bring it on a very auspicious & fortunate number (5). With this you will be able to continue and cover up all your unfinished work and you will thrive and become very successful with this name. The signature should slant upwards in around 45 degrees’ angle, underline the signature from beginning to end of the name as it serves as a platform. Don’t cut the name with a line</p>
 
                     <br>
 
                     <h3 style="text-align:center" style="border: solid 1px #000">Email as Per Numerology</h3>
                     <br>
-                    <h4 style="text-align:center" >Register a new email id as </h4>
+                    <h4 style="text-align:center">Register a new email id as </h4>
 
                     <h4 class="text-center">
                         <input type="text" class="form-control" style="text-align:center">
                     </h4>
 
                     <p style="font-style:italic;color:#444">
-                    If you are using your previous email bcc this new email to increase positive vibrations.</p>
+                        If you are using your previous email bcc this new email to increase positive vibrations.</p>
                 </div>
 
             </div>
 
-           <div class="card-footer">
-           <h4 style="text-align:center">SUCCESS IS A BLEND OF GOOD FORTUNE AND HARDWORK<br></h4>
-            <br>
-            <h5 style="text-align:center">THANK YOU!</h5>
-           </div>
+            <div class="card-footer">
+                <h4 style="text-align:center">SUCCESS IS A BLEND OF GOOD FORTUNE AND HARDWORK<br></h4>
+                <br>
+                <h5 style="text-align:center">THANK YOU!</h5>
+            </div>
         </div>
     </div>
     </div>

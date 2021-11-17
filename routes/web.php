@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ClientsController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Middleware\Authenticate;
+use Illuminate\Support\Facades\Auth;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +18,13 @@ use App\Http\Controllers\ClientsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'App\Http\Controllers\ClientsController@create');
-Route::resource('client', ClientsController::class);
-// Route::resource('doctor', 'User\DoctorsController');
 
+Route::get('/', 'App\Http\Controllers\Auth\LoginController@loginU');
+
+Auth::routes();
+Route::middleware(['auth'])->group(function () {
+    Route::resource('client', ClientsController::class);
+    Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
+    Route::get('/home', [App\Http\Controllers\ClientsController::class, 'create'])->name('home');
+});
