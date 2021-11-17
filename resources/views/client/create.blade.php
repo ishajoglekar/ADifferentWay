@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>A Different Way By Anujja</title>
     <link rel="icon" href="{{ asset('img/logo.png') }}">
+    <title>A Different Way By Anujja</title>
 </head>
 
 <body onload="load()">
