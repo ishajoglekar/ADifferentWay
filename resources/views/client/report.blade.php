@@ -68,7 +68,7 @@
 
                             <tr>
                                 <td>Combination</td>
-                                <td>Combination : {{$client->birthnumber->id}}/{{$client->destinynumber}}</td>
+                                <td>{{$client->birthnumber->id}}/{{$client->destinynumber}}</td>
                             </tr>
 
                             <tr>
