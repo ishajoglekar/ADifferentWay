@@ -15,39 +15,39 @@ class ProfessionsSeeder extends Seeder
     public function run()
     {
         DB::table('professions')->insert([
-            'name' => "Leadership qualities, ambitious, short tempered,aggressive, attention seekers, intelligent, selfish" ,
+            'name' => "Any Profession / Any Business, related to luxury, glamour" ,
             'birthnumber_id'=>1
         ]);
         DB::table('professions')->insert([
-            'name' => "Emotional,confused, not good decision makers,intuitive, blame others easily, mood swings",
+            'name' => "Related to water element, Orator, Writer",
             'birthnumber_id'=>2
         ]);
         DB::table('professions')->insert([
-            'name' => "The number of divin blessings, good communication skills, social, moody, choosy, argumentative",
+            'name' => "Teaching, Healers, Doctors, Motivational Speaker",
             'birthnumber_id'=>3
         ]);
         DB::table('professions')->insert([
-            'name' => "Practical, organized, methodical, straightforward, hard working, struggling life",
+            'name' => "Sales & Marketing, Engineer, Physical Activity, Law Sector",
             'birthnumber_id'=>4
         ]);
         DB::table('professions')->insert([
-            'name' => "Freedom lovers, flexible, love travelling, need variety in life, intellectual",
+            'name' => "Banking Sector, Real estate business, Finance related",
             'birthnumber_id'=>5
         ]);
         DB::table('professions')->insert([
-            'name' => "Compassionate, attractive personality, family oriented, responsible, policy makers, love luxuries, in life",
+            'name' => "Luxury & Glamour, Tours & Travels , Media Industry, Hotel Industry, Beauty Parlours ad Jewelery Designers, Architects & Interior Designers",
             'birthnumber_id'=>6
         ]);
         DB::table('professions')->insert([
-            'name' => "Intellectual, deep thinkers, have limited friends, emotional, spiritual, secretive",
+            'name' => "Occult Science, Healing, Teaching, Research, Art related, Investigation Department",
             'birthnumber_id'=>7
         ]);
         DB::table('professions')->insert([
-            'name' => "Materialistic, practical, rigid, highly ambitious, workaholic, authoritative",            
+            'name' => "Law Setor, Leather Business, Mining & machineries , Import/Export, Chemical Factories, Medicines & Pharma ",
             'birthnumber_id'=>8
         ]);
         DB::table('professions')->insert([
-            'name' => "Passionate Risk takers, Aggressive, Bold ,Straight Forward, help people",
+            'name' => "Army, NGO, Teaching, Healing, Surgical Operations",
             'birthnumber_id'=>9
         ]);
     }

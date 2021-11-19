@@ -52,10 +52,7 @@
                                 <td>Name</td>
                                 <td>{{$client->name}}</td>
                             </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>{{$client->email}}</td>
-                            </tr>
+                            
                             <tr>
                                 <td>Date of Birth</td>
                                 <td>{{$client->dob}}</td>
@@ -114,7 +111,7 @@
                             </tr>
                             <tr>
                                 <td>Suitable Profession</td>
-                                <td>{{$client->profession->name}}</td>
+                                <td><input type="text" class="form-control" value="{{$client->profession->name}}"></td>
                             </tr>
                             <tr>
                                 <td>Personal year</td>

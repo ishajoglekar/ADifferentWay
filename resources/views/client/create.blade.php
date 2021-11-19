@@ -105,9 +105,7 @@
             <label for="" class="form-label">Enter client's name</label>
             <input type="text" class="form-control" name="name">
 
-            <label for="" class="form-label">Enter client's email</label>
-            <input type="text" class="form-control" name="email">
-
+            
             <label for="" class="form-label">Enter client's Date of Birth</label>
             <input type="date" id="from_date" class="form-control" name="date">
 

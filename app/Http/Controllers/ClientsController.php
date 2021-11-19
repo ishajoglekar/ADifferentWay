@@ -96,7 +96,7 @@ class ClientsController extends Controller
         // dd(Zodiac::all()->where('name', $z)->first()->elemens);
         $client = new Client();
         $client->name = $request->name;
-        $client->email = $request->email;
+        // $client->email = $request->email;
         $client->dob = $request->date;
         $client->birthnumber_id = $birth_number;
         $client->quality_id = $birth_number;
