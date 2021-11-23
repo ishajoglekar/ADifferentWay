@@ -27,4 +27,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
     Route::get('/home', [App\Http\Controllers\ClientsController::class, 'create'])->name('home');
+    Route::get('/getAllClients', [App\Http\Controllers\ClientsController::class, 'getAllClients'])->name('getAllClients');
 });

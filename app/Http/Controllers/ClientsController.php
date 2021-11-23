@@ -178,4 +178,12 @@ class ClientsController extends Controller
     {
         //
     }
+
+    public function getAllClients()
+    {
+        $clients = Client::all();
+        return view('client.index',compact([
+            'clients'
+        ]));
+    }
 }
