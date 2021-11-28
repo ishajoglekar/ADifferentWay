@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
         $this->call(AuspiciousmonthsSeeder::class);
         $this->call(ZodiacsSeeder::class);
         $this->call(ProfessionsSeeder::class);
+        $this->call(UsersSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }
