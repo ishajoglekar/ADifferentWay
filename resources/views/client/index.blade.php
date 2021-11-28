@@ -61,7 +61,7 @@
                 <tr>
                     <td>{{$i++}}</td>
                     <td>{{$client->name}}</td>
-                    <td>{{Carbon\Carbon::parse($client->dob)->toDateString()}}</td>
+                    <td>{{Carbon\Carbon::parse($client->dob)->format('d-m-Y')}}</td>
                     <td>{{$client->birthnumber->id}}</td>
                     <td>{{$client->destinynumber}} </td>
                     <td>{{$client->personalyear->id}}</td>
