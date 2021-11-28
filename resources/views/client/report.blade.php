@@ -59,7 +59,7 @@
 
                             <tr>
                                 <td>Date of Birth</td>
-                                <td>Carbon\Carbon::parse($client->dob)->toDateString()</td>
+                                <td>{{Carbon\Carbon::parse($client->dob)->toDateString()}}</td>
                             </tr>
                             <tr>
                                 <td>Birth Number</td>
