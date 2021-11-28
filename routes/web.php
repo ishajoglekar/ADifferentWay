@@ -24,6 +24,7 @@ Route::get('/', 'App\Http\Controllers\Auth\LoginController@loginU');
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::resource('client', ClientsController::class);
+    Route::delete('client/{client}/destroy/', [App\Http\Controllers\ClientsController::class, 'destroy']);
     Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
     Route::get('/home', [App\Http\Controllers\ClientsController::class, 'create'])->name('home');

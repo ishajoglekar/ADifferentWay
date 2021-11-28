@@ -180,14 +180,21 @@ class ClientsController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        // dd($client);
+        $client = Client::where("id",$client->id);
+        $client->forceDelete();
+
+        session()->flash('success','client Deleted Successfully');
+        return redirect()->back();
     }
 
     public function getAllClients()
     {
         $clients = Client::all();
+        $i = 1;
         return view('client.index',compact([
-            'clients'
+            'clients', 
+            'i'
         ]));
     }
 }

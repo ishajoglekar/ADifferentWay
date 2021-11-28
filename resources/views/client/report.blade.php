@@ -13,15 +13,19 @@
 </head>
 
 <body>
+   
     <div class="container">
-        <div class="d-md-flex justify-content-md-end" style="z-index:100">
-        <a href="" class="btn btn-danger " href="{{ route('logout') }}" onclick="event.preventDefault();
+        <div class="d-md-flex justify-content-md-end m-3 mt-3 d-print-none" style="z-index:100">
+
+            <a href="/getAllClients" class="btn btn-success mr-3">View all Clients</a>
+
+            <a href="" class="btn btn-danger " href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Logout</a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="">
                 @csrf
             </form>
-            </div>
+        </div>
         <div class="card">
             <div class="card-header">
                 <div class="row">
@@ -52,10 +56,10 @@
                                 <td>Name</td>
                                 <td>{{$client->name}}</td>
                             </tr>
-                            
+
                             <tr>
                                 <td>Date of Birth</td>
-                                <td>{{$client->dob}}</td>
+                                <td>Carbon\Carbon::parse($client->dob)->toDateString()</td>
                             </tr>
                             <tr>
                                 <td>Birth Number</td>

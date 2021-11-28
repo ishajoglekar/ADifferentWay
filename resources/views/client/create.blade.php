@@ -61,7 +61,7 @@
         }
     </style>
 
-    
+
     <div id="loader">
         <div id="loader1" class="animate__animated animate__slideOutLeft "></div>
         <img src="{{ asset('img/logo.png') }}" id="logo" alt="" class="animate__animated animate__fadeOut">
@@ -98,6 +98,9 @@
     </div>
     <div class="container">
         <br>
+        <div class="d-md-flex justify-content-md-end">
+            <a href="/getAllClients" class="btn btn-success">View all Clients</a>
+        </div>
         <h1 class="text-center">Numerology Report by Anujja Vavhal</h1>
         <form action="{{route('client.store')}}" method="POST" class="form-vertical">
             @csrf
@@ -105,7 +108,7 @@
             <label for="" class="form-label">Enter client's name</label>
             <input type="text" class="form-control" name="name">
 
-            
+
             <label for="" class="form-label">Enter client's Date of Birth</label>
             <input type="date" id="from_date" class="form-control" name="date">
 
