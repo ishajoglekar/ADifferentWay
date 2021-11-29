@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   
+
     <div class="container">
         <div class="d-md-flex justify-content-md-end m-3 mt-3 d-print-none" style="z-index:100">
 
@@ -323,7 +323,18 @@
                     </h4>
 
                     <p style="font-style:italic;color:#444">
-                        Always write your name given as per Numerology to bring it on a very auspicious & fortunate number (5). With this you will be able to continue and cover up all your unfinished work and you will thrive and become very successful with this name. The signature should slant upwards in around 45 degrees’ angle, underline the signature from beginning to end of the name as it serves as a platform. Don’t cut the name with a line</p>
+                        Always write your name given as per Numerology to bring it on a very auspicious & fortunate number
+
+                        <input type="text" name="" width="1cm" placeholder="e.g 5" style="border:none; border-bottom: solid 1px #888; text-align: center">.
+                        <br>
+                        First Name Comes on <input type="text" name="" width="1cm" style="border:none; border-bottom: solid 1px #888; text-align: center">.
+
+                        <br>
+                        Full Name Comes on <input type="text" name="" width="1cm" style="border:none; border-bottom: solid 1px #888; text-align: center">.
+                        <br>
+<br>
+                        With this you will be able to continue and cover up all your unfinished work and you will thrive and become very successful with this name. The signature should slant upwards in around 45 degrees’ angle, underline the signature from beginning to end of the name as it serves as a platform. Don’t cut the name with a line
+                    </p>
 
                     <br>
 
