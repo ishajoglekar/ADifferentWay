@@ -98,20 +98,20 @@
 
                             <tr>
                                 <td>Friendly Numbers</td>
-                                <td>{{$client->friendlynumbers->numbers}}</td>
+                                <td><input type="text" class="form-control"  value="{{$client->friendlynumbers->numbers}}"></td>
                             </tr>
 
                             <tr>
                                 <td>Non-friendly Numbers</td>
-                                <td>{{$client->unfriendlynumbers->numbers}}</td>
+                                <td><input type="text" class="form-control"  value="{{$client->unfriendlynumbers->numbers}}"></td>
                             </tr>
                             <tr>
                                 <td>Neutral Numbers</td>
-                                <td>{{$client->neutralnumbers->numbers}}</td>
+                                <td><input type="text" class="form-control"  value="{{$client->neutralnumbers->numbers}}"></td>
                             </tr>
                             <tr>
                                 <td>Lucky Dates</td>
-                                <td>{{$client->luckydates->dates}}</td>
+                                <td><input type="text" class="form-control"  value="{{$client->luckydates->dates}}"></td>
                             </tr>
                             <tr>
                                 <td>Suitable Profession</td>
@@ -247,8 +247,11 @@
                         <tr>
                             <td>
                                 Chant the following mantra everyday
-                                <br>
+                                
                                 <h5 class="text-center text-bold" style="color:orange;">ॐ श्रीं ह्रीं क्लीं श्री सिद्ध लक्ष्म्यै नम: ।</h5>
+                                
+                                <p class="text-center">or</p>
+                                <h5 class="text-center text-bold" style="color:orange;">ॐ श्रीं ह्रीं क्लीं श्री लक्ष्मी नारायण नम: ।</h5>
                             </td>
                             <td>
                                 <input type="checkbox">
