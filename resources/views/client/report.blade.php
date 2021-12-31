@@ -128,7 +128,7 @@
                             <tr>
                                 <td>Auspicious Days</td>
                                 <td>{{$client->auspiciousdays->days}}</td>
-                            </tr>' <tr>
+                            </tr>    <tr>
                                 <td>Auspicious Months</td>
                                 <td>{{$client->auspiciousmonths->months}}</td>
                             </tr>

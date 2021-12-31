@@ -51,33 +51,43 @@ class ClientsController extends Controller
         // dd($month);
         $destiny_number = 0;
         //calculating full year total 
+        $date = "33";
         while (strlen($date) > 1) {
             $destiny_number = 0;
             for ($i = 0; $i < strlen($date); $i++) {
+                
                 $destiny_number += $date[$i];
+                // echo($destiny_number."<br>");
             }
 
+            
+
             $date = (string)$destiny_number;
+            // dd($date);
         }
 
         $birth_number = 0;
+        // dd($destiny_number);
         //calculating personal number
         while (strlen($day) > 1) {
-            // $birth_number = 0;
+            $birth_number = 0;
             for ($i = 0; $i < strlen($day); $i++) {
                 $birth_number += $day[$i];
                 
             }
-            // dd($day);
-
+            
             $day = (string)$birth_number;
+            // dd(strlen($day));
         }
+
+        
+      
 
         $personal_year_date = Carbon::parse($request->date)->format('d');
         $personal_year_date .= (string)Carbon::parse($request->date)->format('m');
         $personal_year_date .= (string)Carbon::now()->format('Y');
 
-        // dd($personal_year_date);
+        
         while (strlen($personal_year_date) > 1) {
             $personal_year = 0;
             for ($i = 0; $i < strlen($personal_year_date); $i++) {
@@ -87,7 +97,7 @@ class ClientsController extends Controller
             $personal_year_date = (string)$personal_year;
         }
 
-        // dd($personal_year_date);
+        
 
         $zodiac = array('', 'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn');
         $last_day = array('', 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19);
@@ -180,21 +190,14 @@ class ClientsController extends Controller
      */
     public function destroy(Client $client)
     {
-        // dd($client);
-        $client = Client::where("id",$client->id);
-        $client->forceDelete();
-
-        session()->flash('success','client Deleted Successfully');
-        return redirect()->back();
+        //
     }
 
     public function getAllClients()
     {
         $clients = Client::all();
-        $i = 1;
         return view('client.index',compact([
-            'clients', 
-            'i'
+            'clients'
         ]));
     }
 }
