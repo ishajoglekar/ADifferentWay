@@ -98,20 +98,20 @@
 
                             <tr>
                                 <td>Friendly Numbers</td>
-                                <td><input type="text" class="form-control"  value="{{$client->friendlynumbers->numbers}}"></td>
+                                <td><input type="text" class="form-control" value="{{$client->friendlynumbers->numbers}}"></td>
                             </tr>
 
                             <tr>
                                 <td>Non-friendly Numbers</td>
-                                <td><input type="text" class="form-control"  value="{{$client->unfriendlynumbers->numbers}}"></td>
+                                <td><input type="text" class="form-control" value="{{$client->unfriendlynumbers->numbers}}"></td>
                             </tr>
                             <tr>
                                 <td>Neutral Numbers</td>
-                                <td><input type="text" class="form-control"  value="{{$client->neutralnumbers->numbers}}"></td>
+                                <td><input type="text" class="form-control" value="{{$client->neutralnumbers->numbers}}"></td>
                             </tr>
                             <tr>
                                 <td>Lucky Dates</td>
-                                <td><input type="text" class="form-control"  value="{{$client->luckydates->dates}}"></td>
+                                <td><input type="text" class="form-control" value="{{$client->luckydates->dates}}"></td>
                             </tr>
                             <tr>
                                 <td>Suitable Profession</td>
@@ -247,9 +247,9 @@
                         <tr>
                             <td>
                                 Chant the following mantra everyday
-                                
+
                                 <h5 class="text-center text-bold" style="color:orange;">ॐ श्रीं ह्रीं क्लीं श्री सिद्ध लक्ष्म्यै नम: ।</h5>
-                                
+
                                 <p class="text-center">or</p>
                                 <h5 class="text-center text-bold" style="color:orange;">ॐ श्रीं ह्रीं क्लीं श्री लक्ष्मी नारायण नम: ।</h5>
                             </td>
@@ -335,7 +335,7 @@
                         <br>
                         Full Name Comes on <input type="text" name="" width="1cm" style="border:none; border-bottom: solid 1px #888; text-align: center">.
                         <br>
-<br>
+                        <br>
                         With this you will be able to continue and cover up all your unfinished work and you will thrive and become very successful with this name. The signature should slant upwards in around 45 degrees’ angle, underline the signature from beginning to end of the name as it serves as a platform. Don’t cut the name with a line
                     </p>
 
