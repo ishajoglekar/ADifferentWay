@@ -9,7 +9,7 @@ use App\Models\Qualities;
 use App\Models\Zodiac;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 class ClientsController extends Controller
 {
@@ -45,25 +45,31 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
+        
         $date = preg_replace('/-/', '', $request->date);
         $day = Carbon::parse($request->date)->format('d');
         $month = (int)Carbon::parse($request->date)->format('m');
-        // dd($month);
+        // dd($date);
         $destiny_number = 0;
+        $output = new ConsoleOutput();
+
         //calculating full year total 
         while (strlen($date) > 1) {
             $destiny_number = 0;
             for ($i = 0; $i < strlen($date); $i++) {
                 $destiny_number += $date[$i];
+                
             }
 
             $date = (string)$destiny_number;
+            
         }
 
+        
         $birth_number = 0;
         //calculating personal number
         while (strlen($day) > 1) {
-            // $birth_number = 0;
+            $birth_number = 0;
             for ($i = 0; $i < strlen($day); $i++) {
                 $birth_number += $day[$i];
                 
@@ -72,6 +78,8 @@ class ClientsController extends Controller
 
             $day = (string)$birth_number;
         }
+
+        // dd($day);
 
         $personal_year_date = Carbon::parse($request->date)->format('d');
         $personal_year_date .= (string)Carbon::parse($request->date)->format('m');
